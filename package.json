@@ -1,0 +1,38 @@
+{
+  "name": "hooks-de-teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --cls --rs src/index.ts",
+    "migrate:dev": "",
+
+    "test": "jest --verbose --runInBand",
+    "migrate:test": "",
+
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "migrate:prod": "npx prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/helmet": "^4.0.0",
+    "prettier": "^3.2.5",
+    "prisma": "^5.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.9.1",
+    "cors": "^2.8.5",
+    "dotenv-cli": "^7.3.0",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.1.0",
+    "zod": "^3.22.4"
+  }
+}
